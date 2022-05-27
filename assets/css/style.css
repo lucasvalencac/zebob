@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --vermelho: #d80000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Cabeçalho */
+
+header .container {
+    padding: 0 20px;
+    background: #efefef;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-container {
+    background: url("../img/logooficial.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80px;
+    width: 400px;
+}
+
+/* Menu cabeçalho */
+
+header nav {
+    margin: 0 auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 250ms;
+    padding: 31px 50px;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    color: var(--vermelho);
+}
+
+header .social-medias img {
+    margin-left: 15px;
+    height: 32px;
+}
+
+/* Capa principal */
+
+.abertura {
+    height: 280px;
+    background: url("https://img.freepik.com/fotos-gratis/a-textura-da-terra-marrom-da-estrada-da-areia-com-tracos-dos-passos-do-pneu-dos-pneus-de-carro-do-trator_68196-2127.jpg?w=2000");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.abertura {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 20px #00000080;
+}
+
+.abertura .bobcat {
+    height: 80%;
+}
+
+/* Conteúdo principal */
+
+
+.servicos .container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid #00000050; */
+    /* background-color: #10bfea50; */
+    height: 300px;
+}
+
+.servicos h3 {
+    margin: 15px auto;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.lista-servicos {
+    text-align: start;
+    margin: 0 auto;
+}
+
+.lista-servicos tr {
+    width: 80%;
+}
+
+.lista-servicos td {
+    width: 230px;
+    height: 30px;
+    cursor: pointer;
+    transition: color 250ms;
+}
+
+.lista-servicos td:hover {
+    color: var(--vermelho);
+}
+
+.texto {
+    font-size: 14px;
+    text-align: center;
+    color: #3e3e3e;
+    text-transform: uppercase;
+    font-weight: 900;
+}
